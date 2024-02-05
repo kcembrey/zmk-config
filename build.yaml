@@ -22,3 +22,5 @@ include:
     shield: kc_left
   - board: nice_nano_v2
     shield: kc_right
+  - board: nice_nano_v2
+    shield: settings_reset
