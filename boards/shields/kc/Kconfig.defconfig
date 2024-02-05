@@ -21,8 +21,7 @@ endif
 if SHIELD_KC_LEFT || SHIELD_KC_RIGHT
 
 
-config ZMK_SPLIT_BLE
-    default y
+
 
 if ZMK_DISPLAY
 
