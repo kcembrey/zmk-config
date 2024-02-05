@@ -11,12 +11,12 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_KC_RIGHT
+# if SHIELD_KC_RIGHT
 
-config ZMK_KEYBOARD_NAME
-    default "Scylla Right"
+# config ZMK_KEYBOARD_NAME
+#     default "Scylla Right"
 
-endif
+# endif
 
 if SHIELD_KC_LEFT || SHIELD_KC_RIGHT
 
