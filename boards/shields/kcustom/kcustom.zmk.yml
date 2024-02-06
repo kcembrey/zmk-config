@@ -1,10 +1,10 @@
 file_format: "1"
-id: kc
-name: KC
+id: kcustom
+name: KCustom
 type: shield
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - kc_left
-  - kc_right
+  - kcustom_left
+  - kcustom_right

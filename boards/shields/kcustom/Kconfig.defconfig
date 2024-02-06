@@ -1,10 +1,10 @@
 # Copyright (c) 2020 Ryan Cross
 # SPDX-License-Identifier: MIT
 
-if SHIELD_KC_LEFT
+if SHIELD_KCustom_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Scylla"
+    default "KCustom"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -12,14 +12,14 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_KC_RIGHT
+if SHIELD_KCustom_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Scylla Right"
+    default "KCustom Right"
 
 endif
 
-if SHIELD_KC_LEFT || SHIELD_KC_RIGHT
+if SHIELD_KCustom_LEFT || SHIELD_KCustom_RIGHT
 
 config ZMK_SPLIT
     default y

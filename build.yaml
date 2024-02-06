@@ -19,8 +19,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: kc_left
+    shield: kcustom_left
   - board: nice_nano_v2
-    shield: kc_right
+    shield: kcustom_right
   - board: nice_nano_v2
     shield: settings_reset
