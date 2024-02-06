@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
 #define LOWER 1
@@ -95,9 +93,9 @@
 
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans             &trans          &trans      &trans            &trans            &trans
-&sys_reset         &rgb_ug RGB_BRI  &kp PSCRN     &kp UP        &trans        &trans                          &kp PG_UP          &kp KP_NUMLOCK  &kp UP      &kp SCROLLLOCK    &kp PRINTSCREEN   &trans
-&trans             &rgb_ug RGB_BRD  &kp LEFT      &kp DOWN      &kp RIGHT     &kp CLCK                        &kp C_VOLUME_UP    &kp LEFT        &kp DOWN    &kp RIGHT         &kp K_CALCULATOR  &kp C_BRIGHTNESS_INC
-&ext_power EP_TOG  &rgb_ug RGB_TOG  &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp C_VOLUME_DOWN  &kp K_PREVIOUS  &kp K_NEXT  &kp K_PLAY_PAUSE  &kp K_MUTE        &kp C_BRIGHTNESS_DEC
+&sys_reset         &trans  &kp PSCRN     &kp UP        &trans        &trans                          &kp PG_UP          &kp KP_NUMLOCK  &kp UP      &kp SCROLLLOCK    &kp PRINTSCREEN   &trans
+&trans             &trans  &kp LEFT      &kp DOWN      &kp RIGHT     &kp CLCK                        &kp C_VOLUME_UP    &kp LEFT        &kp DOWN    &kp RIGHT         &kp K_CALCULATOR  &kp C_BRIGHTNESS_INC
+&ext_power EP_TOG  &trans  &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp C_VOLUME_DOWN  &kp K_PREVIOUS  &kp K_NEXT  &kp K_PLAY_PAUSE  &kp K_MUTE        &kp C_BRIGHTNESS_DEC
                                     &trans        &trans        &trans        &trans        &trans    &trans  &trans             &trans          &trans      &trans
             >;
 
