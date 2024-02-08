@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define LOWER 1
@@ -51,12 +50,12 @@
             //                            | CTRL | ALT  |                   | CTRL | ALT  | 
 
             bindings = <
-&bt BT_CLR_ALL      &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                          &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp MINUS
-&out OUT_TOG        &kp Q   &kp W   &kp E     &kp R      &kp T                           &kp Y     &kp U      &kp I      &kp O    &kp P     &kp SQT
-&kp LEFT_SHIFT      &kp A   &kp S   &kp D     &kp F      &kp G                           &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&kp ESC             &kp Z   &kp X   &kp C     &kp V      &kp B                           &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                                &kp SPACE   &kp BSPC     &mo 1                           &mo 2     &kp RET    &kp SPACE     
-                                            &kp LCTRL    &kp LGUI                        &kp DEL   &kp LALT    
+&kp EQUAL       &kp N1  &kp N2  &kp N3     &kp N4     &kp N5      &kp N6   &kp N7    &kp N8     &kp N9   &kp N0     &kp MINUS
+&kp TAB         &kp Q   &kp W   &kp E      &kp R      &kp T       &kp Y    &kp U     &kp I      &kp O    &kp P      &kp SQT
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F      &kp G       &kp H    &kp J     &kp K      &kp L    &kp SEMI   &kp RIGHT_SHIFT
+&kp ESCAPE      &kp Z   &kp X   &kp C      &kp V      &kp B       &kp N    &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
+                                &kp SPACE  &kp BSPC   &mo 1       &td0     &kp RET   &kp SPACE
+                                           &kp LCTRL  &kp LGUI    &kp DEL  &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -74,11 +73,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp TILDE       &kp F1     &kp F2         &kp F3             &kp F4     &kp F5                                  &kp F6                 &kp F7           &kp F8           &kp F9           &kp F10          &kp PAGE_UP
-&sys_reset      &kp TILDE  &kp AMPERSAND  &kp ASTERISK       &kp PIPE   &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp HOME
-&kp LPAR        &kp EXCL   &kp DOLLAR     &kp PERCENT        &kp CARET  &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp END
-&kp KP_NUMLOCK  &kp UNDER  &kp EXCL       &kp AT             &kp HASH   &kp LEFT_BRACE        &trans    &trans  &kp RIGHT_BRACE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp PAGE_DOWN
-                           &trans         &kp RIGHT_CONTROL  &trans     &trans                &mo 3     &trans  &trans                 &trans           &kp RIGHT_ALT    &trans
+&kp TILDE       &kp F1     &kp F2         &kp F3        &kp F4         &kp F5                  &kp F6                 &kp F7           &kp F8           &kp F9           &kp F10          &kp PAGE_UP
+&sys_reset      &kp TILDE  &kp AMPERSAND  &kp ASTERISK  &kp PIPE       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp HOME
+&kp LPAR        &kp EXCL   &kp DOLLAR     &kp PERCENT   &kp CARET      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp END
+&kp KP_NUMLOCK  &kp UNDER  &kp EXCL       &kp AT        &kp HASH       &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp PAGE_DOWN
+                                          &kp SPACE     &kp BACKSPACE  &to 3                   &to 3                  &kp ENTER        &kp SPACE
+                                                        &kp RCTRL      &trans                  &kp DELETE             &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -95,11 +95,12 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans             &trans          &trans      &trans            &trans            &trans
-&sys_reset         &trans  &kp PSCRN     &kp UP        &trans        &trans                          &kp PG_UP          &kp KP_NUMLOCK  &kp UP      &kp SCROLLLOCK    &kp PRINTSCREEN   &trans
-&trans             &trans  &kp LEFT      &kp DOWN      &kp RIGHT     &kp CLCK                        &kp C_VOLUME_UP    &kp LEFT        &kp DOWN    &kp RIGHT         &kp K_CALCULATOR  &kp C_BRIGHTNESS_INC
-&ext_power EP_TOG  &trans  &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp C_VOLUME_DOWN  &kp K_PREVIOUS  &kp K_NEXT  &kp K_PLAY_PAUSE  &kp K_MUTE        &kp C_BRIGHTNESS_DEC
-                                    &trans        &trans        &trans        &trans        &trans    &trans  &trans             &trans          &trans      &trans
+&bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4    &trans           &trans          &trans      &trans            &trans            &trans
+&sys_reset         &trans        &kp PSCRN     &kp UP        &trans         &trans          &trans           &kp KP_NUMLOCK  &kp UP      &kp SCROLLLOCK    &kp PRINTSCREEN   &trans
+&trans             &trans        &kp LEFT      &kp DOWN      &kp RIGHT      &kp CLCK        &kp C_VOLUME_UP  &kp LEFT        &kp DOWN    &kp RIGHT         &kp K_CALCULATOR  &kp C_BRIGHTNESS_INC
+&ext_power EP_TOG  &trans        &kp K_CUT     &kp K_COPY    &kp K_PASTE    &trans          &kp C_VOL_DN     &kp K_PREVIOUS  &kp K_NEXT  &kp C_PLAY_PAUSE  &kp K_MUTE        &kp C_BRIGHTNESS_DEC
+                                               &kp SPACE     &kp BACKSPACE  &trans          &trans           &trans          &trans
+                                                             &trans         &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -115,11 +116,12 @@
 
             display-name = "adjust";
             bindings = <
-&kp ESCAPE  &kp N1            &kp N2  &kp N3     &kp N4     &kp N5                    &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp T       &kp TAB           &kp Q   &kp W      &kp E      &kp R                     &kp Y     &kp U      &kp I      &kp O    &kp P     &kp SQT
-&kp G       &kp LEFT_SHIFT    &kp A   &kp S      &kp D      &kp F                     &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&kp B       &kp LEFT_CONTROL  &kp Z   &kp X      &kp C      &kp V   &to 0    &to 1    &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                              &mo 1   &kp SPACE  &kp SPACE  &kp B   &kp T    &kp DEL  &kp LALT  &kp SPACE  &kp RET    &mo 2
+&kp ESCAPE  &kp N1            &kp N2  &kp N3     &kp N4     &kp N5    &kp N6     &kp N7      &kp N8     &kp N9      &kp N0     &kp MINUS
+&kp T       &kp TAB           &kp Q   &kp W      &kp E      &kp R     &kp Y      &kp U       &kp I      &kp O       &kp P      &kp SQT
+&kp G       &kp LEFT_SHIFT    &kp A   &kp S      &kp D      &kp F     &kp H      &kp J       &kp K      &kp L       &kp SEMI   &kp RIGHT_SHIFT
+&kp B       &kp LEFT_CONTROL  &kp Z   &kp X      &kp C      &kp V     &kp N      &kp M       &kp COMMA  &kp PERIOD  &kp SLASH  &kp DOT
+                                      &kp SPACE  &kp SPACE  &to 0     &to 0      &kp SPACE   &kp SPACE
+                                                 &kp B      &kp T     &kp ENTER  &kp DELETE
             >;
         };
     };
