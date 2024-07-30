@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: kcustom_left
+    shield: seat_left
   - board: nice_nano_v2
-    shield: kcustom_right
+    shield: seat_right
