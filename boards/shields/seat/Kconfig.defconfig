@@ -1,0 +1,27 @@
+# Copyright (c) 2020 Ryan Cross
+# SPDX-License-Identifier: MIT
+
+if SHIELD_KCustom_Seat_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "KCustom Seat"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+
+endif
+
+if SHIELD_KCustom_Seat_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "KCustom Seat Right"
+
+endif
+
+if SHIELD_KCustom_Seat_LEFT || SHIELD_KCustom_Seat_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

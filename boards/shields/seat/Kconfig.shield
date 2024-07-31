@@ -1,0 +1,5 @@
+config SHIELD_KCustom_Seat_LEFT
+    def_bool $(shields_list_contains,KCustom_Seat_left)
+
+config SHIELD_KCustom_Seat_RIGHT
+    def_bool $(shields_list_contains,KCustom_Seat_right)
