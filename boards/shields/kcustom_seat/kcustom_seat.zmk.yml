@@ -1,10 +1,10 @@
 file_format: "1"
-id: KCustom_Seat
-name: KCustom_Seat
+id: kcustom_seat
+name: kcustom_seat
 type: shield
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - KCustom_Seat_left
-  - KCustom_Seat_right
+  - kcustom_seat_left
+  - kcustom_seat_right

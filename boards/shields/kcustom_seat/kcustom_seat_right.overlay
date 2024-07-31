@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
- #include "KCustom_Seat.dtsi"
+ #include "kcustom_seat.dtsi"
 
  &default_transform {
 	col-offset = <6>;
