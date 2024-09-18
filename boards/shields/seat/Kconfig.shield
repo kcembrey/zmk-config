@@ -1,5 +1,0 @@
-config SHIELD_seat_LEFT
-    def_bool $(shields_list_contains,seat_left)
-
-config SHIELD_seat_RIGHT
-    def_bool $(shields_list_contains,seat_right)
