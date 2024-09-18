@@ -19,8 +19,7 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: seat_left
-    snippet: zmk-usb-logging
+    shield: kcustom_seat_left
   - board: nice_nano_v2
-    shield: seat_right
+    shield: kcustom_seat_right
     snippet: zmk-usb-logging

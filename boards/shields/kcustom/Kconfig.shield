@@ -1,0 +1,5 @@
+config SHIELD_KCustom_LEFT
+    def_bool $(shields_list_contains,kcustom_left)
+
+config SHIELD_KCustom_RIGHT
+    def_bool $(shields_list_contains,kcustom_right)
