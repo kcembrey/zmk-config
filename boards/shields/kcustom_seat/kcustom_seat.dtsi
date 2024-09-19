@@ -11,7 +11,7 @@
          zmk,matrix-transform = &default_transform;
      };
     
-     pro_micro: connector {
+     pro_micro_kc: connector {
          compatible = "arduino-pro-micro";
          #gpio-cells = <2>;
          gpio-map-mask = <0xffffffff 0xffffffc0>;
