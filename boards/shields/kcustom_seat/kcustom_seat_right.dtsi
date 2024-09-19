@@ -5,7 +5,7 @@
  */
 
  #include <zephyr/dt-bindings/input/input-event-codes.h>
- #include <kcustom_seat.dtsi>
+ #include "kcustom_seat.dtsi"
 
 &pinctrl {
     spi2_default: spi2_default {
