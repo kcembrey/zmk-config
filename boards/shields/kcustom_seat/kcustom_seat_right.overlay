@@ -7,6 +7,9 @@
  #include "kcustom_seat_right.dtsi"
  #include <dt-bindings/zmk/matrix_transform.h>
 
+ &default_transform {
+	col-offset = <6>;
+};
 
 &kscan0 {
     col-gpios
