@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
- #include "kcustom_seat_right.dtsi"
+ #include "kcustom_seat.dtsi"
  #include <dt-bindings/zmk/matrix_transform.h>
 
- &default_transform {
+&default_transform {
 	col-offset = <6>;
 };
 
@@ -31,24 +31,8 @@
 };
 
 / {
-	pd0: virtual_input_0 {
-		compatible = "zmk,virtual-input";
-	};
-	pd1: virtual_input_1 {
-		compatible = "zmk,virtual-input";
-	};
-	tball0: virtual_input_tb_1 {
-		compatible = "zmk,virtual-input";
-	};
-	tpoint0: virtual_input_tp {
-		compatible = "zmk,virtual-input";
-	};
-	tpad0: virtual_input_gp {
-		compatible = "zmk,virtual-input";
-	};
-	input_relay_config_104 {
-		compatible = "zmk,split-peripheral-input-relay";
-		relay-channel = <104>;
-		device = <&tball0>;
-	};
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
 };
