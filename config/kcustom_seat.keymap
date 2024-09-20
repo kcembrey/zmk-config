@@ -35,39 +35,7 @@
         };
     };
 
-    /* START input behaviour for trackball */
-
-    tb0_mmv_ibl {
-        /* new forked compatible name */
-
-        compatible = "zmk,input-behavior-listener";
-
-        /* the input point device alias */
-
-        device = <&trackball>;
-
-        /* only enable in mouse key layer */
-
-        layers = <1>;
-
-        /* event code value to override raw input event */
-        /* designed for switching to mouse scroll, xy-swap, precise-mode+, etc */
-        /* NOTE: only apply input-code overriding for INPUT_EV_REL */
-
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <1>;
-
-        /* bind a behavior to auto activate MSK layer for &mkp */
-        /* bindings = <&ib_tog_layer 4>; */
-        /* align to CCW 45 degree */
-        /* rotate-deg = <315>; */
-        /* NOTE 1: This settings do not compitable with y-invert and x-invert */
-        /* NOTE 2: Floating point computation requires alot of ram. */
-        /*         This feature will cuase stackove flow with CONFIG_ZMK_USB_LOGGING=y */
-    };
+    
 
     keymap {
         compatible = "zmk,keymap";
