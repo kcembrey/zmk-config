@@ -71,7 +71,7 @@
 
     /* input config for mouse scroll mode on momentary mouse scroll layer */
 
-    tb0_mvsl_ibl {
+    /*tb0_mvsl_ibl {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
         layers = <4>;
@@ -133,7 +133,7 @@
         #binding-cells = <2>;
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_HWHEEL>;
-    };
+    };*/
 
     /* END input behaviour for trackball */
 
