@@ -6,7 +6,6 @@
 
  #include <dt-bindings/zmk/matrix_transform.h>
  #include "kcustom_seat.dtsi"
- #include "trackball.dtsi"
 
 &default_transform {
 	col-offset = <6>;
