@@ -1,7 +1,7 @@
 # Copyright (c) 2020 Ryan Cross
 # SPDX-License-Identifier: MIT
 
-if SHIELD_kcustom_seat_LEFT
+if SHIELD_kcustom_seat_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "KCustom Seat"
@@ -12,10 +12,10 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_kcustom_seat_RIGHT
+if SHIELD_kcustom_seat_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "KCustom Seat Right"
+    default "KCustom Seat Left"
 
 endif
 
