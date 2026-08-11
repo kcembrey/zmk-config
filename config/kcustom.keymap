@@ -71,12 +71,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp TILDE       &kp F1     &kp F2         &kp F3        &kp F4         &kp F5                  &kp F6                 &kp F7           &kp F8           &kp F9           &kp F10          &kp PAGE_UP
-&sys_reset      &kp TILDE  &kp AMPERSAND  &kp ASTERISK  &kp PIPE       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp HOME
-&out OUT_TOG        &kp EXCL   &kp DOLLAR     &kp PERCENT   &kp CARET      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp END
-&bt BT_CLR  &kp UNDER  &kp EXCL       &kp AT        &kp HASH       &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp PAGE_DOWN
-                                          &kp SPACE     &kp BACKSPACE  &to 3                   &to 3                  &kp ENTER        &kp SPACE
-                                                        &kp RCTRL      &trans                  &kp DELETE             &kp RIGHT_ALT
+&kp TILDE     &kp F1     &kp F2         &kp F3        &kp F4         &kp F5                  &kp F6                 &kp F7           &kp F8           &kp F9           &kp F10          &kp PAGE_UP
+&sys_reset    &kp TILDE  &kp AMPERSAND  &kp ASTERISK  &kp PIPE       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp HOME
+&out OUT_TOG  &kp EXCL   &kp DOLLAR     &kp PERCENT   &kp CARET      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp END
+&bt BT_CLR    &kp UNDER  &kp EXCL       &kp AT        &kp HASH       &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp PAGE_DOWN
+                                        &kp SPACE     &kp BACKSPACE  &to 3                   &to 3                  &kp ENTER        &kp SPACE
+                                                      &kp RCTRL      &trans                  &sys_reset             &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
